@@ -1,2 +1,2 @@
 Flask==2.0.2
-instagram_private_api==1.45.3
+instagram_private_api==1.6.0
