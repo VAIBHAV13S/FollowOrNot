@@ -50,5 +50,3 @@ def index():
         return render_template('result.html', not_following_back=not_following_back)
     return render_template('index.html')
 
-if __name__ == '__main__':
-    app.run(debug=True)
