@@ -36,6 +36,11 @@ def check_followers(username, password):
     not_following_back = following_set - followers_set
     return not_following_back
 
+# Error handler for 404 errors for favicon.ico
+@app.errorhandler(404)
+def favicon_not_found(e):
+    return '', 204
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
